@@ -1,4 +1,14 @@
 #!/bin/sh -eu
 
 apt update
-apt install -y fish less
+DEBIAN_FRONTEND=noninteractive apt install -y \
+  fish \
+  less \
+  fd-find \
+  bat
+
+ln -s $(which fdfind) /usr/local/bin/fd
+ln -s $(which batcat) /usr/local/bin/bat
+
+chsh -s $(which fish)
+fish -c 'fisher update'
