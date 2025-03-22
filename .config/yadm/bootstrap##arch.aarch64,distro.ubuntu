@@ -12,3 +12,5 @@ ln -s $(which fdfind) /usr/local/bin/fd
 ln -s $(which batcat) /usr/local/bin/bat
 
 chsh -s $(which fish)
+
+curl -sS https://starship.rs/install.sh | sh
