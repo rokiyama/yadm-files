@@ -2,7 +2,7 @@
 
 system_type=$(uname -s)
 
-function install_homebrew() {
+install_homebrew() {
   if ! command -v brew >/dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   fi
