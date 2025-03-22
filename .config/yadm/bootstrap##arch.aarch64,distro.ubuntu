@@ -13,4 +13,4 @@ ln -s $(which batcat) /usr/local/bin/bat || true
 
 chsh -s $(which fish)
 
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- -y
