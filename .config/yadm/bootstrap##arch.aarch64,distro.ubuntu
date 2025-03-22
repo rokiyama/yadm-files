@@ -8,8 +8,8 @@ DEBIAN_FRONTEND=noninteractive apt install -y \
   fd-find \
   bat
 
-ln -s $(which fdfind) /usr/local/bin/fd
-ln -s $(which batcat) /usr/local/bin/bat
+ln -s $(which fdfind) /usr/local/bin/fd || true
+ln -s $(which batcat) /usr/local/bin/bat || true
 
 chsh -s $(which fish)
 
