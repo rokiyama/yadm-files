@@ -1,0 +1,24 @@
+#!/bin/sh -eu
+
+system_type=$(uname -s)
+
+function install_homebrew() {
+  if ! command -v brew >/dev/null 2>&1; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  fi
+}
+
+if [ "$system_type" = "Darwin" ]; then
+  install_homebrew
+
+  if [ -f "$HOME/.Brewfile.mac" ]; then
+    brew bundle --file $HOME/.Brewfile.mac
+  fi
+
+elif [ "$system_type" = "Linux" ]; then
+  install_homebrew
+
+  if [ -f "$HOME/.Brewfile.linux" ]; then
+    brew bundle --file $HOME/.Brewfile.linux
+  fi
+fi
