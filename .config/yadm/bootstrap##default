@@ -10,7 +10,7 @@ fi
 
 # tpm
 TPM_DIR=$HOME/.cache/tmux/plugins/tpm
-[[ -d $TPM_DIR ]] || git clone https://github.com/tmux-plugins/tpm.git $TPM_DIR
+[ -d $TPM_DIR ] || git clone https://github.com/tmux-plugins/tpm.git $TPM_DIR
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
