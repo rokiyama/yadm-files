@@ -1,4 +1,6 @@
-#!/bin/sh -eu
+#!/bin/sh
+
+set -eu
 
 apt update
 DEBIAN_FRONTEND=noninteractive apt install -y \
