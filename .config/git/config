@@ -1,0 +1,38 @@
+# vim: ft=gitconfig
+[user]
+	name =
+	email =
+[core]
+	editor = nvim
+	excludesfile = ~/.config/git/ignore_global
+	autocrlf = false
+	pager = less -i
+	quotepath = false
+[color]
+	ui = auto
+[push]
+	default = simple
+[diff "utf16"]
+	textconv = iconv -f utf-16 -t utf-8
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[merge]
+	tool = nvimdiff
+[mergetool]
+	prompt = false
+	keepBackup = false
+[mergetool "nvimdiff"]
+	cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
+[grep]
+	lineNumber = true
+[commit]
+	verbose = true
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/

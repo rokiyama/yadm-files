@@ -1,0 +1,12 @@
+command_timeout = 2000
+
+[aws]
+# format = '[$symbol($profile )($region )(\[$duration\])]($style)'
+symbol = ' '
+
+[gcloud]
+format = '[$symbol($region)]($style) '
+symbol = ' '
+
+[kubernetes]
+disabled = false
