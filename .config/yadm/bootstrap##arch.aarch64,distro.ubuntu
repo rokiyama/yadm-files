@@ -12,4 +12,3 @@ ln -s $(which fdfind) /usr/local/bin/fd
 ln -s $(which batcat) /usr/local/bin/bat
 
 chsh -s $(which fish)
-fish -c 'fisher update'
