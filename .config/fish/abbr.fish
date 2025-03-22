@@ -53,3 +53,16 @@ abbr grb git rebase
 
 abbr gcd git 'status >/dev/null && cd (git rev-parse --show-toplevel)'
 abbr gtop git rev-parse --show-toplevel
+
+abbr ys yadm status -sb
+abbr ya yadm add
+abbr yc yadm commit -v
+abbr yd yadm diff
+abbr ydc yadm diff --cached
+abbr yf yadm fetch --prune
+abbr yl yadm log --graph --oneline --decorate
+abbr yla yadm log --graph --all --oneline --decorate
+abbr ylg yadm log --graph --decorate --format=fuller
+abbr ylga yadm log --graph --all --decorate --format=fuller
+abbr ypl yadm pull
+abbr yps yadm push
