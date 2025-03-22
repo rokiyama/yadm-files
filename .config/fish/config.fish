@@ -25,7 +25,7 @@ if status is-interactive
     # Fisher
     if not functions -q fisher
         myfunc_log 'Installing fisher for the first time...'
-        curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
+        curl -sL git.io/fisher | source && fisher update
     end
 
     # starship
