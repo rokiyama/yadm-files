@@ -53,6 +53,7 @@ abbr grb git rebase
 
 abbr gcd git 'status >/dev/null && cd (git rev-parse --show-toplevel)'
 abbr gtop git rev-parse --show-toplevel
+abbr gtbk "git tag bk/(date '+%Y/%m/%d/%H-%M')/(git branch --show-current)"
 
 abbr ys yadm status -sb
 abbr ya yadm add
