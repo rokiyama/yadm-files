@@ -67,3 +67,5 @@ abbr ylg yadm log --graph --decorate --format=fuller
 abbr ylga yadm log --graph --all --decorate --format=fuller
 abbr ypl yadm pull
 abbr yps yadm push
+
+abbr p pnpm
